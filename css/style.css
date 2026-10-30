@@ -656,3 +656,23 @@ h1,h2,h3{font-weight:400;letter-spacing:-.005em}
 @media (max-width:600px){.gites{grid-template-columns:1fr}.gite img{aspect-ratio:4/3}.notes-grille .note strong{font-size:2rem}.tableau{padding:18px 14px 8px}}
 @media (max-width:1100px){.logo .nom{font-size:1.15rem}}
 @media (max-width:600px){.logo .nom{font-size:1rem}.logo .nom small{display:none}}
+
+/* Pages des gîtes (comme aux Chabriers) */
+.sous-menu a[aria-current="page"]{background:var(--glacier)}
+.sous-menu span{display:block;font-weight:600}
+.page-gite .bandeau h1{color:#fff}
+.page-gite .surtitre{color:var(--c)}
+.page-gite .encart{border-top:5px solid var(--c)}
+.page-gite .encart .ligne strong{color:var(--encre)}
+.note-airbnb{margin-top:26px;color:var(--doux);font-size:.95rem}
+.note-airbnb strong{font-family:var(--titre);font-weight:400;font-size:1.5rem;color:var(--c)}
+.note-airbnb a{text-decoration:underline;text-underline-offset:3px}
+.galerie-gite{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.galerie-gite button{display:block;padding:0;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3}
+.galerie-gite img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.galerie-gite button:hover img{transform:scale(1.05)}
+.tableau-gite{max-width:760px}
+.tableau-gite table{min-width:0}
+.tableau.tableau-gite thead th:nth-child(n){color:var(--c)}
+.gites.trois{grid-template-columns:repeat(3,1fr)}
+@media (max-width:900px){.fiche{grid-template-columns:1fr}.encart{position:static}.galerie-gite{grid-template-columns:repeat(2,1fr)}.gites.trois{grid-template-columns:1fr}}
